@@ -13,8 +13,8 @@ public class CalcolaBiglietto {
 		double newPrice;
 		Scanner in = new Scanner (System.in);
 		
-		System.out.println("Inserisci il numero di chilometri da percorrere: ");
-		km = in.nextInt();
+			System.out.println("Inserisci il numero di chilometri da percorrere: ");
+			km = in.nextInt();
 		
 		System.out.println("Inserisci la tua età: ");
 		age = in.nextInt();

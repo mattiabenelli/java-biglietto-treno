@@ -10,7 +10,7 @@ public class CalcolaBiglietto {
 		int age;
 		double sale;
 		double price;
-		double newPrice;
+		float newPrice;
 		Scanner in = new Scanner (System.in);
 		
 			System.out.println("Inserisci il numero di chilometri da percorrere: ");
@@ -27,15 +27,17 @@ public class CalcolaBiglietto {
 		
 		if(age < 18) {
 			sale = 10;
-			newPrice = price - price*sale/100;
+			newPrice = (float) (price - price*sale/100);
 			System.out.println(sale);
 			
-			System.out.println("sconto per minorenni 10%: prezzo scontato " + newPrice + "$");
+			System.out.println("sconto per minorenni 10%: prezzo scontato " + String.format("%.2f" , newPrice) + "$");
 		}
 		else if(age > 65) {
 			sale = 40;
-			newPrice = price - price*sale/100;
-			System.out.println("sconto per over 65 40%: prezzo scontato " + newPrice + "$");
+			newPrice = (float) (price - price*sale/100);
+			System.out.println("sconto per over 65 40%: prezzo scontato " + String.format("%.2f" , newPrice) + "$");
 		}
+		
+		in.close();
 	}
 }

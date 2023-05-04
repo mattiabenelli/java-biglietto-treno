@@ -29,7 +29,7 @@ public class CibiPreferiti {
 		}
 		else {
 			String z = CibiPreferiti[CibiPreferiti.length/2];
-	        System.out.println(z);
+//	        System.out.println(z);
 	        
 	        System.out.println("L'elemento di mezzo è: " + z);
 		}
